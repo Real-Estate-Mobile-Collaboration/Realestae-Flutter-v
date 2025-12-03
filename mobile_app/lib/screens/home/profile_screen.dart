@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/auth_provider.dart';
 import '../../utils/theme.dart';
+import '../../widgets/login_required_widget.dart';
 import '../auth/login_screen.dart';
 import '../property/my_properties_screen.dart';
 import '../settings/settings_screen.dart';
@@ -19,7 +20,11 @@ class ProfileScreen extends StatelessWidget {
           final user = authProvider.user;
 
           if (user == null) {
-            return const Center(child: Text('No user data'));
+            return const LoginRequiredWidget(
+              title: 'Profile',
+              message: 'Sign in to view and manage your profile, properties, and settings.',
+              icon: Icons.person,
+            );
           }
 
           return SingleChildScrollView(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/favorite_provider.dart';
+import '../../providers/auth_provider.dart';
 import '../../models/property.dart';
 import '../property/property_details_screen.dart';
+import '../../widgets/login_required_widget.dart';
 import '../../utils/helpers.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
@@ -24,6 +26,20 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final authProvider = Provider.of<AuthProvider>(context, listen: false);
+    
+    // Si non authentifié, afficher un message
+    if (authProvider.user == null) {
+      return const Scaffold(
+        backgroundColor: Color(0xFFF8F9FE),
+        body: LoginRequiredWidget(
+          title: 'Favorites',
+          message: 'Sign in to save your favorite properties and access them anytime.',
+          icon: Icons.favorite,
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FE),
       body: SafeArea(

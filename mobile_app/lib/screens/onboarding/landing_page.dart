@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../auth/login_screen.dart';
 import '../auth/register_screen.dart';
+import '../home/main_navigation.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -54,6 +55,13 @@ class _LandingPageState extends State<LandingPage> {
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => const RegisterScreen()),
+    );
+  }
+
+  void _navigateToExplore() {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const MainNavigation(guestMode: true)),
     );
   }
 
@@ -170,6 +178,34 @@ class _LandingPageState extends State<LandingPage> {
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
                           ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Explore Button
+                    SizedBox(
+                      width: double.infinity,
+                      height: 56,
+                      child: TextButton(
+                        onPressed: _navigateToExplore,
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.white,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.explore_outlined, color: Colors.white.withOpacity(0.9)),
+                            const SizedBox(width: 8),
+                            Text(
+                              'Explore Without Account',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white.withOpacity(0.9),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

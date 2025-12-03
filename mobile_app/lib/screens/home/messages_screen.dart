@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import '../../providers/message_provider.dart';
 import '../../providers/auth_provider.dart';
+import '../../widgets/login_required_widget.dart';
 import '../chat/chat_screen.dart';
 
 class MessagesScreen extends StatefulWidget {
@@ -23,6 +24,20 @@ class _MessagesScreenState extends State<MessagesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final authProvider = Provider.of<AuthProvider>(context, listen: false);
+    
+    // Si non authentifié, afficher un message
+    if (authProvider.user == null) {
+      return const Scaffold(
+        backgroundColor: Color(0xFFF8F9FE),
+        body: LoginRequiredWidget(
+          title: 'Messages',
+          message: 'Sign in to chat with property owners and discuss details.',
+          icon: Icons.message,
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xFFF8F9FE),
       body: SafeArea(
