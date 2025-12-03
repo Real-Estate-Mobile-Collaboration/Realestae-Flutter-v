@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A cross-platform mobile application for real estate listings">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="real_estate_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Google Sign-In Client ID -->
+  <meta name="google-signin-client_id" content="752571424787-j3fbqj6s4e4jshbjd0bmsk2gkes3o8g0.apps.googleusercontent.com">
+  
+  <!-- Facebook App ID -->
+  <meta property="fb:app_id" content="1229699722333709" />
+
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+  
+  <script>
+    // Initialize Stripe.js
+    var stripe = Stripe('pk_test_51P5Z6sRx18G0p2N5ZkC3R5Q0p4b0g6f7Y8h9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6A7B8C9D0E1F2G'); // Replace with your actual key
+  </script>
+
+  <!-- Facebook SDK -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1229699722333709',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v18.0'
+      });
+      window.fbReady = true;
+      console.log('✅ Facebook SDK initialized');
+    };
+  </script>
+  <script async defer crossorigin="anonymous" 
+          src="https://connect.facebook.net/en_US/sdk.js" 
+          id="facebook-jssdk"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>real_estate_app</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- Facebook SDK Root -->
+  <div id="fb-root"></div>
+  
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
