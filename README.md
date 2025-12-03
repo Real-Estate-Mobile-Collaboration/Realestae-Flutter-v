@@ -1,6 +1,6 @@
 # 🏡 Real Estate Mobile Application
 
-Une application mobile moderne de gestion immobilière développée avec Flutter et Node.js, permettant aux utilisateurs de rechercher, publier et gérer des propriétés au Maroc et en Tunisie.
+Une application mobile moderne de gestion immobilière développée avec Flutter et Node.js, permettant aux utilisateurs de rechercher, publier et gérer des propriétés.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue.svg)
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)
@@ -8,15 +8,7 @@ Une application mobile moderne de gestion immobilière développée avec Flutter
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📱 Captures d'écran
-![Screenshot_20251203-220156](https://github.com/user-attachments/assets/2e8785bd-d40e-432a-a11d-c33f84b60a3f)
-![Screenshot_20251203-220258](https://github.com/user-attachments/assets/43a03b76-7e71-4c96-86ca-dc70babdbc49)
-![Screenshot_20251203-220314](https://github.com/user-attachments/assets/320ff7f9-d7b0-415d-9133-cd695c128727)
-![Screenshot_20251203-220344](https://github.com/user-attachments/assets/feac5a4a-f4a7-4a61-a168-ec6bebd57f5d)
-![Screenshot_20251203-220401](https://github.com/user-attachments/assets/8a7c84a1-fcbd-4597-b063-61c6dace85b6)
-![Screenshot_20251203-220439](https://github.com/user-attachments/assets/4f9a97ab-70f1-45e2-b224-a22b0333b6e2)
-![Screenshot_20251203-220551](https://github.com/user-attachments/assets/5b4a52f4-8688-49bf-bb7d-02650e44665f)
-![Screenshot_20251203-220613](https://github.com/user-attachments/assets/106a1ca5-9855-4712-8aca-fd5f77a8e17d)
-![Screenshot_20251203-221508](https://github.com/user-attachments/assets/c01f1222-68d0-4e1e-b081-8a07ff6c3d19)
+<table> <tr> <td><img src="https://github.com/user-attachments/assets/2e8785bd-d40e-432a-a11d-c33f84b60a3f" width="220"></td> <td><img src="https://github.com/user-attachments/assets/43a03b76-7e71-4c96-86ca-dc70babdbc49" width="220"></td> <td><img src="https://github.com/user-attachments/assets/320ff7f9-d7b0-415d-9133-cd695c128727" width="220"></td> </tr> <tr> <td><img src="https://github.com/user-attachments/assets/feac5a4a-f4a7-4a61-a168-ec6bebd57f5d" width="220"></td> <td><img src="https://github.com/user-attachments/assets/8a7c84a1-fcbd-4597-b063-61c6dace85b6" width="220"></td> <td><img src="https://github.com/user-attachments/assets/4f9a97ab-70f1-45e2-b224-a22b0333b6e2" width="220"></td> </tr> <tr> <td><img src="https://github.com/user-attachments/assets/5b4a52f4-8688-49bf-bb7d-02650e44665f" width="220"></td> <td><img src="https://github.com/user-attachments/assets/106a1ca5-9855-4712-8aca-fd5f77a8e17d" width="220"></td> <td><img src="https://github.com/user-attachments/assets/c01f1222-68d0-4e1e-b081-8a07ff6c3d19" width="220"></td> </tr> </table>
 ## ✨ Fonctionnalités
 
 ### 🔐 Authentification & Profil
